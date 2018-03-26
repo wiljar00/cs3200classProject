@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import styles from '../styles/styles';
 
-export default class CustomButton extends Component {
+export default class Cell extends Component {
 
     render() {
         return (
