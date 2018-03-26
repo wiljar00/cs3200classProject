@@ -5,6 +5,23 @@ export default StyleSheet.create({
       flex: 1,
       alignSelf: 'stretch',
     },
+    button: {
+      backgroundColor: 'lightgrey',
+      borderRadius: 5,
+      padding: 10,
+      width: 60,
+      height: 60,
+      alignSelf: 'center',
+      margin: 7,
+      borderColor: 'black',
+    },
+    buttonText: {
+      fontSize: 12,
+      textAlign: 'center',
+      justifyContent: 'center',
+      fontWeight: 'bold',
+      color: 'rgb(0,0,139)'
+    },
     container: {
       flex: 1,
       justifyContent: 'center',
