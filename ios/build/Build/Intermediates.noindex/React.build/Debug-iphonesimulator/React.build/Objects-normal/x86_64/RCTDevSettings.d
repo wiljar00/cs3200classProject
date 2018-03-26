@@ -1,0 +1,23 @@
+dependencies: \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Modules/RCTDevSettings.mm \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Modules/RCTDevSettings.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTEventDispatcher.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Modules/RCTJSCSamplingProfiler.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Base/RCTUtils.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/DevSupport/RCTPackagerClient.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/DevSupport/RCTPackagerConnection.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/DevSupport/RCTInspectorDevServerHelper.h \
+  /Users/jaromwilcox/Not-ICloud/CS3200/classProject/classProgram/node_modules/react-native/React/Inspector/RCTInspectorPackagerConnection.h
