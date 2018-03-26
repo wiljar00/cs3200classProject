@@ -22,6 +22,15 @@ export default StyleSheet.create({
       fontWeight: 'bold',
       color: 'rgb(0,0,139)'
     },
+    cell: {
+      borderColor: 'blue',
+      backgroundColor: 'white',
+    },
+    grid: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
     container: {
       flex: 1,
       justifyContent: 'center',

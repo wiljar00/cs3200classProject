@@ -12,7 +12,7 @@ export default class Cell extends Component {
         return (
             // Create a touchable object and accept passed function
             <TouchableOpacity
-                style={styles.button}
+                style={styles.cell}
                 onPress = {this.props.onPress}
             >
             {/* Output the passed name on each button */}

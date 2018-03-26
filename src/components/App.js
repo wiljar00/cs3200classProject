@@ -11,8 +11,9 @@ import {
   Text,
   View
 } from 'react-native';
-import ResetButton from './ResetButton'
 
+import ResetButton from './ResetButton';
+import Grid from './Grid';
 
 import styles from '../styles/styles';
 
@@ -32,6 +33,8 @@ export default class App extends Component {
           TIC-TAC-TOE
         </Text>
         <ResetButton onPress={this.resetState()}/>
+        <Grid>
+        </Grid>
       </View>
     );
   }
