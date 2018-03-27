@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   Platform,
@@ -11,32 +5,28 @@ import {
   Text,
   View
 } from 'react-native';
-import ResetButton from './ResetButton'
-
 
 import styles from '../styles/styles';
 
-export default class App extends Component {
-  constructor(props){
-    super(props);
+import { StackNavigator } from 'react-navigation';
 
-    this.state={
-      pTurn: true
+import MenuScreen from './Menu/MenuScreen';
+
+//These navigation names can be changed.
+//Add your game screens to the navigator.
+const MainNavigator = StackNavigator({
+  Menu:{
+    screen: MenuScreen,
+    navigationOptions:{
+      headerTransparent: true
     }
   }
+})
 
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          TIC-TAC-TOE
-        </Text>
-        <ResetButton onPress={this.resetState()}/>
-      </View>
+      <MainNavigator/>
     );
-  }
-
-  resetState(){
-    //TODO: Reset State
   }
 };
