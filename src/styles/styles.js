@@ -1,45 +1,34 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-    background: {
-      flex: 1,
-      alignSelf: 'stretch',
-    },
-    button: {
+
+    cell: {
       backgroundColor: 'lightgrey',
-      borderRadius: 5,
       padding: 10,
-      width: 60,
-      height: 60,
+      width: 111,
+      height: 160,
       alignSelf: 'center',
       margin: 7,
-      borderColor: 'black',
+      borderRadius: 2,
     },
-    buttonText: {
-      fontSize: 12,
-      textAlign: 'center',
-      justifyContent: 'center',
-      fontWeight: 'bold',
-      color: 'rgb(0,0,139)'
+    mainView: {
+      flex: 1,
+      paddingTop: 80,
+      alignItems: 'center',
+      backgroundColor: 'cyan'
     },
-    container: {
+    grid: {
       flex: 1,
       justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: 'lightblue',
-      },
-    title: {
-      fontSize: 35,
-      fontFamily: 'arial',
-      textAlign: 'center',
-      fontWeight: 'bold',
-      margin: 10,
-      marginTop:40,
-      color: 'blue'
+      alignItems: 'center'
     },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
+    gridView:{
+      backgroundColor: 'black',
+      height: 520
+    },
+    turn: {
+      fontSize: 20,
+      textAlign:'center',
+      paddingBottom: 20,
     }
 });
