@@ -8,6 +8,8 @@ import {
 import MenuButton from './MenuButton';
 
 import menuStyles from '../../styles/menuStyles';
+import { StackNavigator } from 'react-navigation';
+
 
 export default class MenuScreen extends Component {
     render() {
@@ -18,7 +20,9 @@ export default class MenuScreen extends Component {
             </View>
             <View>
                 <MenuButton buttonText="Tic Tac Toe"/>
-                <MenuButton buttonText="Snake"/>
+                <MenuButton buttonText="Snake"
+                    navfunc={()=>this.props.navigation.navigate('Snake')}
+                    />
                 <MenuButton buttonText="Hangman"/>
             </View>
         </View>

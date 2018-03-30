@@ -8,11 +8,15 @@ import {
 } from 'react-native';
 
 import menuStyles from '../../styles/menuStyles';
+import { StackNavigator } from 'react-navigation';
+
 
 export default class MenuButton extends Component {
     render() {
       return (
-        <TouchableOpacity style={menuStyles.menuButton}>
+        <TouchableOpacity 
+        onPress={this.props.navfunc}
+        style={menuStyles.menuButton}>
             <Text style={menuStyles.menuButtonText}>{this.props.buttonText}</Text>
         </TouchableOpacity>
       );
