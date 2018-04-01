@@ -5,9 +5,6 @@ import {
   Text,
   View
 } from 'react-native';
-
-import styles from '../styles/styles';
-
 import { StackNavigator } from 'react-navigation';
 
 import MenuScreen from './Menu/MenuScreen';
@@ -34,7 +31,6 @@ const MainNavigator = StackNavigator({
     screen: TicTacToeScreen,
     navigationOptions: {
       headerTransparent: true,
-      title: 'Tic-Tac-Toe'
     }
   },
 });

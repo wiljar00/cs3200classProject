@@ -1,3 +1,9 @@
+/**
+ * Disclamer: Most of the logic in this 'TicTacToe' program
+ * came from a tutorial by the user EcutDavid at: 
+ * medium.com/@davidguandev/building-a-tic-tac-toe-in-react-native-2a3c44e697f2
+ */
+
 import React, { Component } from 'react';
 import {
   StyleSheet,
@@ -6,33 +12,42 @@ import {
   View
 } from 'react-native';
 
-import styles from '../../styles/styles';
-import Grid from './Grid';
-import cell from './Cell';
+import Header from './gameComponents/Header'
+import GameBoard from './GameBoard'
+import styles from '../../styles/tictactoeStyles'
 
 export default class TicTacToeScreen extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-          player1: 'O',
-          player2: 'X',
-          empty: '',
-          board: []
+      constructor() {
+        super()
+        this.state={ 
+          gameStarted: false 
         }
       }
-    render() {
+    
+      startGame() {
+        this.setState({ gameStarted: true })
+      }
+    
+      render() {
+        const { gameStarted } = this.state
         return (
-            <View style={styles.mainView}>
+          <View style={styles.TicTacToeContainer}>
+            <Header />
+            {
+              gameStarted ? (<GameBoard />) : (
                 <View>
-                    <Text style={styles.turn}>
-                        Pick a Square! 
+                  <Text style={styles.TicTacToeTitle}>
+                    Welcome to Tic Tac Toe !
+                  </Text>
+                  <TouchableOpacity onPress={() => this.startGame()}>
+                    <Text style={styles.TicTacToeInstructions}>
+                      Touch here to start
                     </Text>
+                  </TouchableOpacity>
                 </View>
-                <View style={styles.gridView}>
-                    <Grid>
-                    </Grid>
-                </View>
-            </View>
-        );
+              )
+            }
+          </View>
+        )
     }
-};
+}
