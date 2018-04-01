@@ -19,7 +19,9 @@ export default class MenuScreen extends Component {
                 <Text style={menuStyles.menuTitle}>Team Triple T Games App</Text>
             </View>
             <View>
-                <MenuButton buttonText="Tic Tac Toe"/>
+                <MenuButton buttonText="Tic Tac Toe"
+                    navfunc={()=>this.props.navigation.navigate('TicTacToe')}
+                    />
                 <MenuButton buttonText="Snake"
                     navfunc={()=>this.props.navigation.navigate('Snake')}
                     />
