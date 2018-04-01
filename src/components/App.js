@@ -8,6 +8,7 @@ import {
 import { StackNavigator } from 'react-navigation';
 
 import MenuScreen from './Menu/MenuScreen';
+import Collision from './Menu/Collision';
 import SnakeScreen from './Snake/SnakeScreen';
 import TicTacToeScreen from './TicTacToe/TicTacToe';
 
@@ -33,7 +34,18 @@ const MainNavigator = StackNavigator({
       headerTransparent: true,
     }
   },
+
+
+  Collision: {
+    screen: Collision,
+    navigationOptions: {
+      headerTransparent: true,
+      title: 'Collision Game'
+    }
+  },
+
 });
+
 
 export default class App extends Component {
   render() {
