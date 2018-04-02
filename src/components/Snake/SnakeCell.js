@@ -9,37 +9,28 @@ import {
 export default class SnakeCell extends Component {
   constructor(props){
     super(props);
-
-    this.state={
-      snake: false
-    }
   }
   render() {
-    if(!this.state.snake){
+    if(this.props.type == 0){
       return (
         <View style={{width: 30, height: 30, backgroundColor: 'black'}}>
             
         </View>
       );
     }
-    else{
+    else if(this.props.type == 1){
       return(
         <View style={{width: 30, height: 30, backgroundColor: 'white'}}>
         
         </View>
       )
     }
-  }
-
-  BecomeSnake(){
-    this.setState({
-      snake: true
-    })
-  }
-
-  UnbecomeSnake(){
-    this.setState({
-      snake: false
-    })
+    else{
+      return(
+        <View style={{width: 30, height: 30, backgroundColor: 'red'}}>
+        
+        </View>
+      )
+    }
   }
 };
