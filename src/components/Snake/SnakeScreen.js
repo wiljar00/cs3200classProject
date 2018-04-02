@@ -105,7 +105,7 @@ export default class SnakeScreen extends Component {
       this.intervalId = setInterval(()=>{
         this.MoveSnake();
         this.forceUpdate();
-      }, 200);
+      }, 250);
     }
 
     render() {
