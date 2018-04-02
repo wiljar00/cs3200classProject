@@ -6,7 +6,6 @@ import {
   View
 } from 'react-native';
 import MenuButton from './MenuButton';
-
 import menuStyles from '../../styles/menuStyles';
 import { StackNavigator } from 'react-navigation';
 
@@ -16,7 +15,7 @@ export default class MenuScreen extends Component {
       return (
         <View style={menuStyles.menuView}>
             <View style={menuStyles.menuTitleBlock}>
-                <Text style={menuStyles.menuTitle}>Team Triple T Games App</Text>
+                <Text style={menuStyles.menuTitle}>Team Triple T Games App: Aggie Plays</Text>
             </View>
             <View>
                 <MenuButton buttonText="Tic Tac Toe"
@@ -25,7 +24,7 @@ export default class MenuScreen extends Component {
                 <MenuButton buttonText="Snake"
                     navfunc={()=>this.props.navigation.navigate('Snake')}
                     />
-                <MenuButton buttonText="Hangman"/>
+                <MenuButton buttonText="Collision Game"  navfunc={()=>this.props.navigation.navigate('Collision')}/>
             </View>
         </View>
       );
